@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+
+class MyTheme {
+  // static Color primaryColor = Colors.yellow[800];
+  static Color primaryColor = Color(0xffFFC938);
+  // static  Color secondryColor =Colors.grey[900];
+   static  Color secondryColor =Colors.grey[900];
+  // static Color buttonColor = Color(0xff282828);
+  static Color buttonColor1 = Color(0xff21A7DF);
+  static Color buttonColor2 = Color(0xffEF8023);
+  static Color buttonColor3 = Color(0xffD3DBDE);
+  static Color textColor1 = Color(0xff0D4686);
+  static Color textColor2 = Color(0xff21A7DF);
+  static Color textColor3 = Color(0xff707070);
+   static Color borderColor1 = Color(0xff707070);
+   static Color borderColor2 = Color(0xff21A7DF);
+  static Color transparent = Colors.transparent;
+  static Color lightblur = Colors.black26;
+  static Color mediumblur = Colors.black38;
+  static Color darkblur = Colors.black45;
+  static Color white = Colors.white;
+  
+  static Color grey = Colors.grey;
+  static Color grey50= Colors.grey[50];
+  static Color grey100= Colors.grey[100];
+   static Color grey200= Colors.grey[200];
+  static Color grey300 = Colors.grey[300];
+   static Color grey350 = Colors.grey[350];
+   static Color grey400= Colors.grey[400];
+  static Color black = Colors.black;
+   static Color black26 = Colors.black26;
+  static Color black38 = Colors.black38;
+   static Color black45 = Colors.black45;
+ static Color black54 = Colors.black54;
+  static Color green = Colors.green;
+  static Color green100 = Colors.green[100];
+  static Color green200 = Colors.green[200];
+  static Color darkGreen = Colors.green[900];
+  static Color blue100 = Colors.blue[100];
+  static Color darkBlue = Colors.blue[900];
+  static Color transparentBlue = Colors.blue.withOpacity(0.0);
+  static Color white10 = Colors.white10;
+  static Color white12 = Colors.white12;
+  static Color white24 = Colors.white24;
+  static Color white30 = Colors.white30;
+  static Color white38 = Colors.white38;
+  static Color white54 = Colors.white54;
+  static Color white60 = Colors.white60;
+  static Color teal = Colors.teal;
+  static Color teal50 = Colors.teal[50];
+  static Color darkTeal = Colors.teal[900];
+  static Color pink = Colors.pink;
+  static Color red = Colors.red;
+  static Color redAccent100 = Colors.redAccent[100];
+  static Color orange = Colors.orange;
+  static Color blue = Colors.blue;
+  static Color purple = Colors.purple;
+  static Color brown = Colors.brown;
+  static Color quizPageColor1 = Color(0xffF7B2B0);
+  static Color quizPageColor2 = Color(0xffF9D8CB);
+  static Color quizPageColor3 = Color(0xffFFEEA9);
+  
+}
