@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ocr/global/theme/colors.dart';
 import 'package:ocr/global/widgets/buttons.dart';
 import 'package:ocr/register/view/scan_cpr_screen.dart';
+import 'package:ocr/ui/pages/scan_card_flow/choose_id_type.dart';
 
 class UploadDocForm extends StatelessWidget {
   @override
@@ -27,8 +28,7 @@ class UploadDocForm extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: MyTheme.grey)),
+                  borderRadius: BorderRadius.circular(20), border: Border.all(color: MyTheme.grey)),
               child: Stack(
                 children: [
                   Align(
@@ -48,9 +48,7 @@ class UploadDocForm extends StatelessWidget {
                       child: Text(
                         "Upload your document",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                            color: MyTheme.textColor1),
+                            fontWeight: FontWeight.bold, fontSize: 22, color: MyTheme.textColor1),
                       ),
                     ),
                   ),
@@ -69,12 +67,8 @@ class UploadDocForm extends StatelessWidget {
                   children: [
                     RoundedBorderTextButton(
                       onTap: () async {
-                        final cameras = await availableCameras();
-                        final firstCamera = cameras.first;
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => ScanCPRscreen(
-                                  camera: firstCamera,
-                                )));
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) => ChooseIdTypePage()));
                       },
                       height: size.height * 0.06,
                       width: size.width,
@@ -93,8 +87,7 @@ class UploadDocForm extends StatelessWidget {
                         onTap: () {},
                         child: Text(
                           "Need Support?",
-                          style: TextStyle(
-                              fontSize: 15, color: MyTheme.textColor2),
+                          style: TextStyle(fontSize: 15, color: MyTheme.textColor2),
                         ),
                       ),
                     )

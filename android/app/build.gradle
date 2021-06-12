@@ -23,6 +23,7 @@ if (flutterVersionName == null) {
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
@@ -34,7 +35,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.ocr"
+        applicationId "com.softposkyc.ocr"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
@@ -48,6 +49,15 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    dependencies {
+        api 'com.google.android.gms:play-services-vision:20.1.2'
+        api 'com.google.android.gms:play-services-vision-common:19.1.2'
+        api 'com.google.firebase:firebase-ml-vision-image-label-model:20.0.2'
+        api 'com.google.android.gms:play-services-vision-image-labeling-internal:16.0.5'
+        api 'com.google.firebase:firebase-ml-vision-face-model:20.0.2'
+        api 'com.google.android.gms:play-services-vision-face-contour-internal:16.0.3'
+        api 'com.google.android.gms:play-services-vision-image-label:18.1.0'
+    }
 }
 
 flutter {
@@ -55,5 +65,6 @@ flutter {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

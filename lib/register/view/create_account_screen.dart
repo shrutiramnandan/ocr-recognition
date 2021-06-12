@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ocr/global/theme/colors.dart';
 import 'package:ocr/register/view/create_account_form.dart';
 
+// ignore: must_be_immutable
 class CreateAccountScreen extends StatelessWidget {
   int index = 0;
   @override
